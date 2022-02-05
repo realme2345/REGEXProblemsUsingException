@@ -21,7 +21,7 @@ namespace REGEXProblemsWithExceptionHandling
         {
             try
             {
-                if (Regex.IsMatch(Password, UpperCase))
+                if (Regex.IsMatch(Password, Numeric))
                 {
                     return "Valid";
                 }
