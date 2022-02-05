@@ -17,7 +17,7 @@ namespace REGEXProblemsWithExceptionHandling
         }
         public string ValidatingFirstName()
         {
-            try
+            try //Exception Handling
             {
                 if (Regex.IsMatch(FirstName, Pattern))
                 {
