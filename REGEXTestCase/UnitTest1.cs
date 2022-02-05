@@ -11,7 +11,7 @@ namespace REGEXTestCase
         public void REGEXMethod()
         {
             ///Arrange
-            string password = "Rajakongara";
+            string password = "Rajakongara1234";
             string expected = "Valid";
             REGEXExceptionHandling regex = new REGEXExceptionHandling(password);//creating a object for a class
             ///Act

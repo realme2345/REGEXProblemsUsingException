@@ -10,14 +10,14 @@ namespace REGEXProblemsWithExceptionHandling
     public class REGEXExceptionHandling
     {
         public string Password;
-        public static string UpperCase = @"^(?=.*[A-Z])[A-Za-z0-9]{8,}$";
+        public static string Numeric = @"^(?=.*[0-9])[A-Za-z0-9]{8,}$";
         // this pattern used for validate the Password
         public REGEXExceptionHandling(string password) // constructer
         {
             this.Password = password;
         }
         public string ValidatingUserRegistration() // this method used for the validating password with minimum eight characters
-                                                   // with atleast one upper case
+                                                   // with atleast one numeric
         {
             try
             {
