@@ -11,9 +11,9 @@ namespace REGEXTestCase
         public void REGEXMethod()
         {
             ///Arrange
-            string lastName = "Raja";
+            string Email = "Raja";
             string expected = "Valid";
-            REGEXExceptionHandling regex = new REGEXExceptionHandling(lastName);//creating a object for a class
+            REGEXExceptionHandling regex = new REGEXExceptionHandling(Email);//creating a object for a class
             ///Act
             string actual = regex.ValidatingFirstName();//hear we check for validating firstName
             ///Assert
