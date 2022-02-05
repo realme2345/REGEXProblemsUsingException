@@ -15,7 +15,7 @@ namespace REGEXTestCase
             string expected = "Valid";
             REGEXExceptionHandling regex = new REGEXExceptionHandling(Email);//creating a object for a class
             ///Act
-            string actual = regex.ValidatingFirstName();//hear we check for validating firstName
+            string actual = regex.ValidatingUserRegistration();//hear we check for validating firstName
             ///Assert
             Assert.AreEqual(expected, actual);
         }

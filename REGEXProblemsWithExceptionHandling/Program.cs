@@ -13,7 +13,7 @@ namespace REGEXProblemsWithExceptionHandling
             string Email ="Raja";
             Console.WriteLine("Welcome to the REGEX problems with Exception");
             REGEXExceptionHandling regex = new REGEXExceptionHandling(Email);
-            regex.ValidatingFirstName();
+            regex.ValidatingUserRegistration();
         }
     }
 }

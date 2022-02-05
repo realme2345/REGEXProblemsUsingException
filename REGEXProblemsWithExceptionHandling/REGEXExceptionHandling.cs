@@ -9,26 +9,26 @@ namespace REGEXProblemsWithExceptionHandling
 {
     public class REGEXExceptionHandling
     {
-        public string Email;
-        public static string Pattern = @"^([A-Za-z0-9]*\.[A-Za-z0-9]*)@([A-Za-z0-9]*)((\.(\w){2,3})+)$"; // this pattern used for validate the Email
-        public REGEXExceptionHandling(string Email) // this method is used for validating Email
+        public string Mobile;
+        public static string MobileNum = @"^([\+][0-9]{2}\s*[0-9]{10})$";
+        // this pattern used for validate the Mobile Number
+        public REGEXExceptionHandling(string mobileNumber) // constructer
         {
-            this.Email = Email;
+            this.Mobile = mobileNumber;
         }
-        public string ValidatingFirstName()
+        public string ValidatingUserRegistration()
         {
             try
             {
-                if (Regex.IsMatch(Email, Pattern))
+                if (Regex.IsMatch(Mobile, MobileNum))
                 {
-                    // Console.WriteLine("{0} is valid", Email);
                     return "Valid";
                 }
                 else
                 {
-                    //Console.WriteLine("{0} is not valid", Email);
                     return "NotValid";
                 }
+                //The End
             }
             catch (ArgumentNullException ex)
             {
