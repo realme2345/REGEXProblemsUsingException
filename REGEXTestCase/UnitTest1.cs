@@ -15,7 +15,7 @@ namespace REGEXTestCase
             string expected = "Valid";
             REGEXExceptionHandling regex = new REGEXExceptionHandling(password);//creating a object for a class
             ///Act
-            string actual = regex.ValidatingUserRegistration();//hear we check for validating password
+            string actual = regex.ValidatingUserRegistration();//thear we check for validating password
             ///Assert
             Assert.AreEqual(expected, actual);
         }

@@ -12,7 +12,7 @@ namespace REGEXProblemsWithExceptionHandling
         {
             string password = "Rajakongara";
             Console.WriteLine("Welcome to the REGEX problems with Exception");
-            REGEXExceptionHandling regex = new REGEXExceptionHandling(password);
+            REGEXExceptionHandling regex = new REGEXExceptionHandling(password);//Creating a object for a class
             regex.ValidatingUserRegistration();
         }
     }
