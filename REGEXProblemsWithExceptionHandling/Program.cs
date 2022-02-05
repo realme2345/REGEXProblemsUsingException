@@ -12,7 +12,7 @@ namespace REGEXProblemsWithExceptionHandling
         {
             string firstName =null;
             Console.WriteLine("Welcome to the REGEX problems with Exception");
-            REGEXExceptionHandling regex = new REGEXExceptionHandling(firstName);
+            REGEXException regex = new REGEXException(firstName);
             regex.ValidatingFirstName();
         }
     }

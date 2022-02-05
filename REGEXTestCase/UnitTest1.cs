@@ -10,14 +10,14 @@ namespace REGEXTestCase
         [TestMethod]
         public void REGEXMethod()
         {
-            ///Arrange
             string firstName = "Raja";
             string expected = "Valid";
-            REGEXExceptionHandling regex = new REGEXExceptionHandling(firstName);//creating a object for a class
-            ///Act
+            ///Arrange
+            REGEXException regex = new REGEXException(firstName);//creating a object for a class
+           ///Act
             string actual = regex.ValidatingFirstName();//hear we check for validating firstName
             ///Assert
-            Assert.AreEqual(expected, actual);
+           Assert.AreEqual(expected, actual);
         }
          //The End 
     }

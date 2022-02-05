@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace REGEXProblemsWithExceptionHandling
 {
-    public class REGEXExceptionHandling
+    public class REGEXException
     {
         public string FirstName;
         public static string Pattern = "^[A-Z][A-Z a-z]{3,}$"; // this pattern used for validate the name
-        public REGEXExceptionHandling(string firstName) // this method is used for validating first name
+        public REGEXException(string firstName) // this method is used for validating first name
         {
             this.FirstName = firstName;
         }
@@ -37,7 +37,7 @@ namespace REGEXProblemsWithExceptionHandling
             catch (Exception ex)
             {
                 return ex.Message;
-            }    
+            }
             //The End
         }
     }
