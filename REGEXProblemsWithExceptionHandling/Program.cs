@@ -10,7 +10,7 @@ namespace REGEXProblemsWithExceptionHandling
     {
         static void Main(string[] args)
         {
-            string Email ="Raja";
+            string Email ="raja.kongara@gmail.com";
             Console.WriteLine("Welcome to the REGEX problems with Exception");
             REGEXExceptionHandling regex = new REGEXExceptionHandling(Email);
             regex.ValidatingFirstName();

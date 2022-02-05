@@ -11,7 +11,7 @@ namespace REGEXTestCase
         public void REGEXMethod()
         {
             ///Arrange
-            string Email = "Raja";
+            string Email = "raja.kongara@gmail.com";
             string expected = "Valid";
             REGEXExceptionHandling regex = new REGEXExceptionHandling(Email);//creating a object for a class
             ///Act
