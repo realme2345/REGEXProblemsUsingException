@@ -9,24 +9,24 @@ namespace REGEXProblemsWithExceptionHandling
 {
     public class REGEXExceptionHandling
     {
-        public string Mobile;
-        public static string MobileNum = @"^([\+][0-9]{2}\s*[0-9]{10})$";
-        // this pattern used for validate the Mobile Number
-        public REGEXExceptionHandling(string mobileNumber) // constructer
+        public string Password;
+        public static string PasswordPattern = @"^[A-Za-z0-9]{8,}$";
+        // this pattern used for validate the password
+        public REGEXExceptionHandling(string password) // constructer
         {
-            this.Mobile = mobileNumber;
+            this.Password = password;
         }
         public string ValidatingUserRegistration()
         {
             try
             {
-                if (Regex.IsMatch(Mobile, MobileNum))
+                if (Regex.IsMatch(Password, PasswordPattern))// this method used for the validating password with minimum eight characters 
                 {
                     return "Valid";
                 }
                 else
                 {
-                    return "NotValid";
+                    return "InValid";
                 }
                 //The End
             }

@@ -10,9 +10,9 @@ namespace REGEXProblemsWithExceptionHandling
     {
         static void Main(string[] args)
         {
-            string mobile ="+91 1234567895";
+            string password = "Rajakongara";
             Console.WriteLine("Welcome to the REGEX problems with Exception");
-            REGEXExceptionHandling regex = new REGEXExceptionHandling(mobile);
+            REGEXExceptionHandling regex = new REGEXExceptionHandling(password);
             regex.ValidatingUserRegistration();
         }
     }
