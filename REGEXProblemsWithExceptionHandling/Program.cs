@@ -10,7 +10,10 @@ namespace REGEXProblemsWithExceptionHandling
     {
         static void Main(string[] args)
         {
+            string firstName =null;
             Console.WriteLine("Welcome to the REGEX problems with Exception");
+            REGEXExceptionHandling regex = new REGEXExceptionHandling(firstName);
+            regex.ValidatingFirstName();
         }
     }
 }
